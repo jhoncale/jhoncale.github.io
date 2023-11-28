@@ -102,9 +102,75 @@
             <div class="section-title">
                
                 <h1 class="display-4">Introducción:</h1>
+                <p>
+                    En el contexto de la Industria 4.0, las comunicaciones industriales son fundamentales para la interconexión de dispositivos, sistemas y procesos dentro de entornos industriales. Este campo se enfoca en facilitar la transferencia de datos y la comunicación entre maquinaria, equipos, sensores, sistemas de control y otros dispositivos en entornos de fabricación y producción.</p>
+                    <figure>
+                        <img src="img\Comunicaciones\Piramide4.0.png" alt="Imagen1" width=80% height=auto>
+                        <figcaption>Piramide De automatización industria 4.0</figcaption>
+                      </figure>
+                    <p>Algunos aspectos clave de las comunicaciones industriales en la Industria 4.0 incluyen:</p>
+                    <ul>
+                    
+                        <li><p><strong>Interoperabilidad:</strong> El objetivo es lograr la interoperabilidad entre equipos y sistemas heterogéneos, permitiendo que dispositivos de diferentes fabricantes y tecnologías se comuniquen entre sí de manera eficiente y sin problemas.</p></li>
+                        <li><p> <strong>Protocolos de comunicación:</strong> Se utilizan diversos protocolos de comunicación como OPC UA, Modbus, PROFINET, EtherNet/IP, MQTT, entre otros, para facilitar la transferencia de datos de forma segura y eficiente en entornos industriales. </p></li>
+                        <li><p> <strong>Internet de las cosas (IoT) e Internet Industrial de las Cosas (IIoT):</strong> Estas tecnologías permiten la conectividad y comunicación entre dispositivos, sensores y sistemas, permitiendo la recolección de datos en tiempo real para análisis y control.</p></li>
+                        <li><p> <strong>Computación en la nube y edge computing: </strong> Facilitan el almacenamiento, procesamiento y análisis de grandes volúmenes de datos generados por dispositivos industriales, lo que permite tomar decisiones informadas de manera más ágil y eficiente.</p></li>
+                        <li><p> <strong>Seguridad de las comunicaciones:</strong> Dado que la conectividad expone los sistemas industriales a riesgos de seguridad, se hace hincapié en implementar medidas de seguridad robustas para proteger los datos y los sistemas contra amenazas cibernéticas.</p></li>
+                        <li><p> <strong>Comunicación hombre-máquina (HMI): </strong> Las interfaces hombre-máquina juegan un papel crucial al permitir a los operarios y personal de planta interactuar con los sistemas de control y monitoreo para supervisar y controlar los procesos de fabricación.</p></li>
+    
+                      
+                    </ul>
+                    <p>En el caso particular del proyecto se deben crear comuniaciones para los siguientes entornos de desarrollo:</p> 
+                    <h4>Ignitition:</h4>
+                    <p>
+                        Ignition es una plataforma de software para la automatización industrial y la gestión de la información que ofrece una solución integral para supervisar, controlar y analizar sistemas en entornos industriales. Esta plataforma permite la integración de dispositivos y sistemas heterogéneos, 
+                        ofreciendo herramientas de desarrollo y despliegue rápido de aplicaciones, así como capacidades avanzadas de visualización de datos en tiempo real, análisis, gestión de alarmas y reportes. Ignition se destaca por su arquitectura modular, flexibilidad, escalabilidad y su capacidad para conectar
+                         y gestionar equipos y procesos en una amplia gama de sectores industriales. </p>
+                         <figure>
+                            <img src="img\Comunicaciones\ignition.png" alt="Imagen1" width=40% height=auto>
+                            <figcaption>RSLinx</figcaption>
+                          </figure>
+                    <p>Ignition para nuestro caso, sera el centro de todas nuestras comunicaciones entre los diferentes entornos de desarrollo, esta aplicación al ser diseñada con este fin cuenta con bastante variedad de protocolos de comuniación y habilita suficientes apliaciones de interes en el área de la Mecatronica.</p>
+                    <h4>Studio5000:</h4>
+                    <p>
+                        Studio 5000 es un entorno de desarrollo de software de Rockwell Automation diseñado para la programación, configuración y mantenimiento de sistemas de control industrial, especialmente para los controladores de automatización programables (PLCs) y sistemas de control distribuido (DCS). Esta plataforma integra herramientas de diseño, simulación, programación, diagnóstico y optimización de sistemas de automatización, permitiendo a los ingenieros y profesionales de control crear y mantener aplicaciones de control complejas, ofreciendo una interfaz unificada para la configuración y programación de dispositivos, así como la gestión de redes y sistemas de control en entornos industriales.
+                        
+                        
+                        
+                        
+                        
+                        </p>
 
+                    <p> Studio5000 tiene un modulo dedicado a la conectividad y comunicaciones en diferentes entornos de desarrollo el cual es RSLinx,un software de comunicaciones de Rockwell Automation utilizado en entornos industriales para establecer la conectividad y la comunicación entre diferentes dispositivos de control, como controladores programables (PLCs) y computadoras, a través de diferentes protocolos de comunicación. Este software proporciona una interfaz para la configuración y administración de conexiones de red, permitiendo la recolección de datos en tiempo real, el monitoreo de dispositivos y la transferencia de información entre equipos, lo que facilita el control y la supervisión de sistemas industriales en entornos de fabricación y automatización.</p>
+                    
+                    <figure>
+                        <img src="img\Comunicaciones\Rslinx.jpg" alt="Imagen1" width=60% height=auto>
+                        <figcaption>RSLinx</figcaption>
+                      </figure>
+
+                      <h4>Siemens NX:</h4>
+
+                      <p>
+                        Siemens NX es un software integral de diseño, fabricación y simulación utilizado en industrias como la automotriz, aeroespacial y de maquinaria. Ofrece herramientas avanzadas para modelado 3D, análisis, simulación de rendimiento y fabricación asistida por computadora. Destacándose por su capacidad de integrar diferentes etapas del proceso de diseño y fabricación en una única plataforma, fomentando la colaboración entre equipos y proporcionando una suite completa para el desarrollo de productos, desde la conceptualización hasta la fabricación final. </p>
+
+                        <p>Para lograr comunicación con nx, se debe conectar Studio5000 el cual coordinara toda la logica y configuración de la simulación previamente creada.</p>
+                        
+                        <h4>RobotStudio:</h4>
+
+                        <p>RobotStudio es la aplicacion por la cual se programan y se visualizan las rutinas de movimiento de los robots industruales de la familia ABB.</p>
+                        <figure>
+                            <img src="img\Comunicaciones\abb-robotstudio.jpg" alt="Imagen1" width=40% height=auto>
+                            <figcaption>RobotStudio</figcaption>
+                          </figure>
+                        <p>para la comunicación con RobotStudio, contamos con el protocolo de comunicaciones industriales OPC-UA, el cual permite conección directa entre ignition y robotStudio</p>
+                        <img src="img\Comunicaciones\opc.jpg" alt="Imagen1" width=40% height=auto>
+                        <figcaption>OPC-UA</figcaption>
+                      </figure>
+                      <h3>Implementación en proyecto:</h3>
+                      <p>En primera instancia se intento multiples ocaciones y de diferentes formas establecer conexión con los diferentes entornos de desarrollo,También,se consulto a los profesores sobre las dificultades que presentamos.</p>
+                      <p>Lastimosamente no logramos entablar una conexión entre los entornos de desarrollo y la conclusión a la cual llegamos despues de varios intentos fallidos y dialogarlo con los profesores. Es que se debe a incompatibilidad de los programas o mala instalación de los mismos (pese a que se reinstalo en reiteradas ocasiones)</p>
                 
-            </div>
+                    </div>
            
         </div>
     </div>

@@ -109,11 +109,42 @@
                 <p>La industria 4.0 impulsa la evolución de la fabricación hacia entornos altamente automatizados, flexibles,
                      conectados y eficientes, donde la interacción entre la tecnología y las personas redefine los procesos industriales
                       tradicionales para lograr una mayor competitividad y sostenibilidad.</p>
+                
+                      <figure>
+                        <img src="img\automaindust\industria4.0.jpg" alt="Industria 4.0">
+                        <figcaption>Industria 4.0</figcaption>
+                      </figure>
+                 
+                      <p>Para el caso particular de este proyecto, se va a implementar un diseño de conecctividad y relacionamiento el cual su eje central 
+                        va a ser ignition, el cual alojara el sistema SCADA y del mismo modo, permite conectar todos los programas de control logico secuencial 
+                        para el caso de sensores y actuadores. Para el caso de los robots implementados, por medio de RobotStudio mediante comunicacion OPC-UA. Y 
+                        para el Gemelo digital,este estara conectado a Studio 5000 e ignition, siendo este ultimo el que coordina, recibe y envia todos los datos de comunicación.
+                    
+                    </p>
 
-                      <img src="img\automaindust\industria4.0.jpg" alt="Descripción de la imagen">
+                    <p>Dicho lo anterior, tenemos el siguiente sistema de supervición en las comunicaciones:</p>
+                    <figure>
+                        <img src="img\automaindust\Diagrama4.0.png" alt="IDiagrama niveles Industria 4.0">
+                        <figcaption>Industria 4.0</figcaption>
+                      </figure>
+
+                    <h5>  Nivel 0 Dispositivos de campo de proceso: </h5>
+                        <p>El Nivel 0 cuenta con todos los sensores y actuadores fisicos de la planta, estos representan la capa más baja del diagrama al ser los elementos físicos del sistema. </p>
+                    <h5>  Nivel 1 Control de proceso: </h5>
+                        <P> El Nivel 1 representa a los controladores con las rutinas de control establecidas, este nivel hace Referencia más que a un controlador físico, al software de este, pues
+                            el software es el determinante del que y como se controlan los actuadores.  </P>
+                        <p>También, este nivel aloja los protocolos de comunicación a ignition siendo el caso de Studio5000 RSLinx y en el caso de RobotStudio mediante protocolo industrial OPC-UA</p>
+
+                        <h5>  Nivel 2 supervición: </h5>
+                            <p>Ignition es una plataforma de software para la automatización industrial y el desarrollo de aplicaciones de supervisión, control y adquisición de datos (SCADA por sus siglas en inglés).
+                                 Es desarrollado por la empresa Inductive Automation y se utiliza en una amplia gama de industrias para monitorear y controlar procesos industriales en tiempo real. En este caso el papel que desempeña 
+                                Ignition es fundamental pues es el puente de comuncación entre los niveles 1 y 3.</p>
+                                <h5>  Nivel 3 Operaciones de Manufactura: </h5>
+                                    <p>Este nivel permite almacenar y conectar con la nube y la internet toda la estructura de la industria 4.0 lo cual permite, por ejemplo, visualizar en tiempo real un Digital Twin con Kpis relevantes. </p>
+                        <p> En resumen,la relevancia de la industria 4.0 radica en su capacidad para transformar los procesos industriales, impulsar la innovación, mejorar la eficiencia, permitir la personalización, promover la toma de decisiones
+                             informada por datos y crear nuevas oportunidades de negocio, todo ello con el potencial de generar un impacto positivo en la economía y la sostenibilidad a largo plazo.</p>
 
                 
-                <h1 class="mb-3">Los productos deben cumplir con las siguientes características:</h1>
              
 
             </div>
